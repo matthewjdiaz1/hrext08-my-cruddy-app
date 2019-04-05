@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>HREXT08 R00lz!</title>
-	<script
-		src="https://code.jquery.com/jquery-3.3.1.js"
-		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	<title>Guitar Chords</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+	<script async type="text/javascript" src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 	<div class="container">
 		<form action="" method="" class="form">
 			<div class="form">
-				<label for="key">Enter key: </label>
-				<input type="text" name="key" id="key" required>
+				<!-- <label for="key">Enter key: </label>
+				<input type="text" name="key" id="key" required> -->
 			</div>
 			<div class="form">
-				<label for="value">Enter value: </label>
-				<input type="text" name="value" id="value" required>
+				<!-- <label for="value">Enter value: </label>
+				<input type="text" name="value" id="value" required> -->
 			</div>
 			<div class="form">
-				<button class="button" id="btn-create" type="button">Create</button>
+				<!-- <button class="button" id="btn-create" type="button">Create</button>
 				<button class="button" id="btn-update" type="button">Update</button>
-				<button class="button" id="btn-delete" type="button">Delete</button>
+				<button class="button" id="btn-delete" type="button">Delete</button> -->
+				<br>
+				<label for="key">Chord</label>
+				<br>
+				<button class="button" id="btn-C" type="button">C</button>
+				<button class="button" id="btn-Cs" type="button">C#</button>
+				<button class="button" id="btn-D" type="button">D</button>
+				<button class="button" id="btn-Ds" type="button">D#</button>
+				<button class="button" id="btn-E" type="button">E</button>
+				<button class="button" id="btn-F" type="button">F</button>
+				<button class="button" id="btn-Fs" type="button">F#</button>
+				<button class="button" id="btn-G" type="button">G</button>
+				<button class="button" id="btn-Gs" type="button">G#</button>
+				<button class="button" id="btn-A" type="button">A</button>
+				<button class="button" id="btn-As" type="button">A#</button>
+				<button class="button" id="btn-B" type="button">B</button>
+				<br>
+				<br>
+				<!-- <ins class="scales_chords_api" chord="/music-scales/guitar-major-A-n.jpg"></ins><br> -->
+				<div>
+					<!-- <ins class="scales_chords_api" chord="/music-scales/guitar-major-A-n.jpg"></ins><br> -->
+					<ins class="scales_chords_api c-class" chord="C"></ins>
+					<ins class="scales_chords_api cs-class" chord="C#"></ins>
+					<ins class="scales_chords_api d-class" chord="D"></ins>
+					<ins class="scales_chords_api ds-class" chord="D#"></ins>
+					<ins class="scales_chords_api e-class" chord="E"></ins>
+					<ins class="scales_chords_api f-class" chord="F"></ins>
+					<ins class="scales_chords_api fs-class" chord="F#"></ins>
+					<ins class="scales_chords_api g-class" chord="G"></ins>
+					<ins class="scales_chords_api gs-class" chord="G#"></ins>
+					<ins class="scales_chords_api a-class" chord="A"></ins>
+					<ins class="scales_chords_api as-class" chord="A#"></ins>
+					<ins class="scales_chords_api b-class" chord="B"></ins>
+				</div>
 			</div>
 			<!-- clear button? -->
-		</form>	
-		<table>
+		</form>
+		<!-- <table>
 			<thead>
 				<tr>
-					<th>Key</th>
+
 					<th>Value</th>
 				</tr>
 			</thead>
@@ -41,12 +76,13 @@
 					<td>test value</td>
 				</tr>
 			</tbody>
-		</table>
+		</table> -->
 	</div>
-	<div id="statusLabel">Status:</div>
+	<div id="statusLabel"></div>
 
 	<script src="app/app.js"></script>
-  <!--
+
+	<!--
    table to view data
 
    form for input for the crud operations
@@ -56,4 +92,5 @@
   -->
 
 </body>
+
 </html>
